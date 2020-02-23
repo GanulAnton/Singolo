@@ -24,7 +24,6 @@ body{
     margin: 0 auto;
     position: relative;
 }
-
 .header{
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -40,7 +39,6 @@ body{
     justify-content: space-between;
     align-items: center;
 } 
-
 .singolo{
     margin: 18px 0 0 39px;
     font-size: 25px;
@@ -48,16 +46,12 @@ body{
     
     text-align: justify; 
 }
-  
 .slider{
     
     background-color:#f06c64;
     height: 594px;
     border-bottom: 6px solid #ea676b;
 }
-
-
-
 .chev{
     vertical-align: middle;
     margin-left: 42px;
@@ -90,18 +84,13 @@ body{
 .chev-2:hover{
     cursor: pointer;
     transform: scale(1.5) rotate(180deg);
-
 }
-  
-  
-
 .nav{
     float: right;
     margin: 14px 0 0;
     position: relative;
     width: auto;
     width: 452px;
-
 }
 .container-nav{
     position: relative;
@@ -135,8 +124,7 @@ p span{
     height: 496px;
     background-color: #f2f2f2;
     color: #666d89;
-    border-bottom: 6px solid #ffffff;
-   
+    border-bottom: 6px solid #ffffff; 
 }
 .col-1{
     position: relative;
@@ -154,7 +142,6 @@ p span{
     text-align: justify;
     margin: 0;
     padding-top: 16px;
-  
 }
 .services-container{
     width: 940px;
@@ -187,7 +174,6 @@ p span{
     font-family: 'Lato-Black' , sans-serif;
     font-size: 18px;
     margin:0;
-  
 }
 .text-4{
     font-family: 'Lato' , sans-serif;
