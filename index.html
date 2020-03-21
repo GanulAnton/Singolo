@@ -9,62 +9,69 @@
     <body>
         <header class="header">
               <div class="container-header">
-                <h1 class="singolo">singolo<span class="colorf06c64">*</span></h1>
+                <h1 class="singolo" name="home">singolo<span class="colorf06c64">*</span></h1>
                 <nav class="nav">
                   <ul class="container-nav">
-                    <li><p class="nav-item-1">HOME <span>&#183;</span></p></li>
-                    <li><p class="nav-item-2">SERVICES <span>&#183;</span></p></li>
-                    <li><p class="nav-item-3">PORTFOLIO <span>&#183;</span></p></li>
-                    <li><p class="nav-item-4">ABOUT <span>&#183;</span></p></li>
-                    <li><p class="nav-item-5">CONTACT</p></li>
+                    <li><p class="nav-item-1" ><a href="#home">HOME </a><span>&#183;</span></p></li>
+                    <li><p class="nav-item-2" ><a href="#services">SERVICES </a><span>&#183;</span></p></li>
+                    <li><p class="nav-item-3" ><a href="#portfolio">PORTFOLIO </a><span>&#183;</span></p></li>
+                    <li><p class="nav-item-4" ><a href="#about">ABOUT </a><span>&#183;</span></p></li>
+                    <li><p class="nav-item-5" ><a href="#contact">CONTACT</a></p></li>
                   </ul>
                 </nav>
             </div>
           </header>
         <main>
-            <section class="slider">
+            <section class="slider" id="home">
                 <div class="slider-container">
-                <img class="chev" src="assets/images/chev.png">
-                <img class="iphone-vertical" src="assets/images/iPhone Vertical.png">
-                <img class="iphone-horizontal" src="assets/images/iPhone Horizontal.png">
-                <img class="chev-2" src="assets/images/chev.png">
-                </div>
+                  <div class="second-slide displayNone">
+                    <img class="second-slide-phone" src="assets/images/slider2.png">
+                  </div>
+                  <div class="first-slide activeElement">
+                    <img class="iphone-black-vertical " src="assets/images/iphone-black-vertical.png">
+                    <img class="iphone-black-horizontal " src="assets/images/iphone-black-horizontal.png">
+                    <img class="iphone-vertical" src="assets/images/iPhone Vertical.png">
+                    <img class="iphone-horizontal" src="assets/images/iPhone Horizontal.png">
+                  </div>
+                    <img class="chev" src="assets/images/chev.png">
+                    <img class="chev-2" src="assets/images/chev.png">
+                  </div>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <div class="services-container">
-                    <div class="col-1">
-                        <p class="text-1">Our Services</p>
+                    <div class="col-1" >
+                        <p class="text-1" >Our Services</p>
                         <p class="text-2">Fusce dapibus,  tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                     </div>
                     <div class="img-services-container-1">
-                        <img class="icon" src="assets/images/Pen.png" >
+                        <img class="icon" src="assets/images/pen.png" >
                         <div class="col-2">
                             <p class="text-3">Custom Design</p>
                             <p class="text-4">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                         </div>
-                        <img class="icon" src="assets/images/Bulb.png" >
+                        <img class="icon" src="assets/images/bulb.png" >
                         <div class="col-2">
                             <p class="text-3">Inovative Ideas</p>
                             <p class="text-4">Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                         </div>
-                        <img class="icon" src="assets/images/Heart.png" >
+                        <img class="icon" src="assets/images/heart.png" >
                         <div class="col-2">
                             <p class="text-3">Love Is The Answer</p>
                             <p class="text-4">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                         </div>
                     </div>
                     <div class="img-services-container-2">
-                        <img class="icon" src="assets/images/Phone.png" >
+                        <img class="icon" src="assets/images/phone.png" >
                         <div class="col-2">
                             <p class="text-3">Responsive Layout</p>
                             <p class="text-4">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.</p>
                         </div>
-                        <img class="icon" src="assets/images/Bubble.png" >
+                        <img class="icon" src="assets/images/bubble.png" >
                         <div class="col-2">
                             <p class="text-3">24 / 7 Support</p>
                             <p class="text-4">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen-tesque egestas venenatis lorem .</p>
                         </div>
-                        <img class="icon" src="assets/images/Star.png" >
+                        <img class="icon" src="assets/images/star.png" >
                         <div class="col-2">
                             <p class="text-3">Feel Like A Star</p>
                             <p class="text-4">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
@@ -72,8 +79,8 @@
                     </div >
                 </div>
             </section>
-            <div class="portfolio-div">
-                <section class="portfolio-section">
+            <div class="portfolio-div" id="portfolio">
+                <section class="portfolio-section" >
                   <h2 class="portfolio-header">Portfolio</h2>
                   <p class="portfolio-description">
                     Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
@@ -82,18 +89,16 @@
                   <nav class="nav-filter">
                     <ul class="filter">
                       <li class="filter-options-li">
-                        <button class="button-all"><span>All</span></button>
+                        <button class="button-all">All</button>
                       </li>
                       <li class="filter-options-li">
-                        <button class="button-web-design"><span>Web Design</span></button>
+                        <button class="button-web-design">Web Design</button>
                       </li>
                       <li class="filter-options-li">
-                        <button class="button-graphic-design">
-                          <span>Graphic Design</span>
-                        </button>
+                        <button class="button-graphic-design">Graphic Design</button>
                       </li>
                       <li class="filter-options-li">
-                        <button class="button-artwork"><span>Artwork</span></button>
+                        <button class="button-artwork">Artwork</button>
                       </li>
                     </ul>
                   </nav>
@@ -161,8 +166,8 @@
                   </div>
                 </section>
               </div>
-              <div class="about-us-section-div">
-                <section class="about-us-section">
+              <div class="about-us-section-div" id="about">
+                <section class="about-us-section" >
                   <h2 class="about-us-header">About Us</h2>
                   <p class="about-us-desctiption">
                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -272,12 +277,12 @@
                   </div>
                 </section>
               </div>
-              <section class="main_section">
+              <section class="main_section" id="contact">
                 <div class="main_wrapper">
                   <h1>Get a Quote</h1>
                   <p class="main_wrapper_text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                   <div class="flex_content">
-                    <form>
+                    <form >
                       <input name="name" type="text" placeholder="Name (Required)" id="name" required/>
                       <input name="email" type="email" placeholder="Email (Required)" id="email" required/>
                       <input name="subject" type="text" placeholder="Subject" id="subject"/>
@@ -304,18 +309,27 @@
                   </div>
                 </div>
               </section>
+              <section id='message-block' class="hidden">
+                  <div id='message'>
+                    <p>Письмо отправлено:</p>
+                    <p id='resultSubject'></p>
+                    <p id='resultDescription'></p>
+                    <button id='close-button'>OK</button>
+                  </div>
+              </section>
         </main>
         <footer class="footer">
             <div class="footer_container">
               <p>© Copyright 2013</p>
               <div class="social_footer">
-                <a href="#"><img class="social" src="assets/images/Facebook.png" alt="facebook icon"/></a>
-                <a href="#"><img class="social" src="assets/images/Google.png" alt="google icon"/></a>
-                <a href="#"><img class="social" src="assets/images/Twitter.png" alt="twitter icon"/></a>
-                <a href="#"><img class="social" src="assets/images/LinkedIn.png" alt="linkedIn icon"/></a>
+                <a href="#"><img class="social" src="assets/images/facebook.png" alt="facebook icon"/></a>
+                <a href="#"><img class="social" src="assets/images/google.png" alt="google icon"/></a>
+                <a href="#"><img class="social" src="assets/images/twitter.png" alt="twitter icon"/></a>
+                <a href="#"><img class="social" src="assets/images/linkedIn.png" alt="linkedIn icon"/></a>
               </div>
             </div>
           </footer>
+          <script src="script.js"></script>
     </body>
 </html>
 
