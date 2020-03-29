@@ -17,7 +17,9 @@
   font-family: "Lato Black";
   src: url("assets/fonts/Lato-Black.ttf");
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1020px;
   margin: 0 auto;
@@ -47,6 +49,7 @@ body {
   color: #ffffff;
   text-align: justify;
 }
+
 .sandwich-container{
   visibility: collapse;
 }
@@ -1223,4 +1226,8 @@ form input {
     width: 374px;
   }
   
+}
+.sandwich-singolo{
+  z-index: 4;
+  margin-left: 70px;
 }

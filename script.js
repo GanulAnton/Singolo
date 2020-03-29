@@ -4,14 +4,19 @@
 const firstSandwichBtn = document.querySelector('.sandwich-container');
 const SecondSandwichBtn = document.querySelector('.turned');
 const containerNav = document.querySelector('.nav');
+const singolo = document.querySelector('.singolo')
 
 firstSandwichBtn.addEventListener('click',(event)=>{
     containerNav.classList.remove('sandwich-visible');
     SecondSandwichBtn.classList.remove('sandwich-visible');
+    singolo.classList.add('sandwich-singolo');
+
 });
 SecondSandwichBtn.addEventListener('click',(event)=>{
     containerNav.classList.add('sandwich-visible');
     SecondSandwichBtn.classList.add('sandwich-visible');
+    singolo.classList.remove('sandwich-singolo');
+
 });
 
 //Switching color of header elements
