@@ -1,4 +1,18 @@
 
+// sandwich-menu func
+
+const firstSandwichBtn = document.querySelector('.sandwich-container');
+const SecondSandwichBtn = document.querySelector('.turned');
+const containerNav = document.querySelector('.nav');
+
+firstSandwichBtn.addEventListener('click',(event)=>{
+    containerNav.classList.remove('sandwich-visible');
+    SecondSandwichBtn.classList.remove('sandwich-visible');
+});
+SecondSandwichBtn.addEventListener('click',(event)=>{
+    containerNav.classList.add('sandwich-visible');
+    SecondSandwichBtn.classList.add('sandwich-visible');
+});
 
 //Switching color of header elements
 
@@ -8,6 +22,8 @@ var addThumbnailClickHandler = function(element) {
         element.addEventListener("click", function() {
         navElement.forEach(el => el.classList.remove("active"));
         element.classList.add("active");
+        containerNav.classList.add('sandwich-visible');
+        SecondSandwichBtn.classList.add('sandwich-visible');
     });
 };
 for (var i = 0; i < navElement.length; i++) {
@@ -22,7 +38,7 @@ function scrollFunc(element){
     const divs = document.querySelectorAll('main > *');
     const links = document.querySelectorAll('.container-nav li a')
     divs.forEach((el) => {
-        if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
+        if(el.offsetTop-250 <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
             links.forEach((a) => {
                 a.classList.remove('active');
                 if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
@@ -58,6 +74,8 @@ horizontalPhoneBlack.addEventListener('click', function(){
 var navPortfolio = document.querySelectorAll(".filter-options-li button");
 var addThumbnailClickHandler = function(element) {
     element.addEventListener("click", function() {
+        portfolioImg.querySelectorAll('img').forEach(el => el.classList.remove('activeImg'));
+        event.target.classList.remove('activeImg');
         navPortfolio.forEach(el => el.classList.remove("active"));
         element.classList.add("active");
         var portfolioImageStack = document.querySelector('.picture-block');
@@ -161,3 +179,8 @@ function onScrollRight(event){
     
 
 }
+
+
+
+
+
