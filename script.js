@@ -29,6 +29,7 @@ var addThumbnailClickHandler = function(element) {
         element.classList.add("active");
         containerNav.classList.add('sandwich-visible');
         SecondSandwichBtn.classList.add('sandwich-visible');
+        singolo.classList.remove('sandwich-singolo');
     });
 };
 for (var i = 0; i < navElement.length; i++) {
